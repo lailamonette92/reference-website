@@ -5,8 +5,555 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design 1 Reference Site</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+<main>
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#common-tags">Common HTML Tags / Elements</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#headings">Headings</a>
+                <a href="#paragraph">Paragraphs</a>
+                <a href="#lists">Lists</a>
+                <a href="#anchors">Links</a>
+                <a href="#images">Images</a>  
+                <a href="#figure">Figures</a>
+                <a href="#quote">Quotes</a>
+                <a href="#blockquotes">Blockquotes</a>
+                <a href="#cite">Cite</a>
+                <a href="#emphasis">Emphasis Tag</a>
+                <a href="#strong">Strong Tag</a>
+                <a href="#bold">Bold Tag</a>
+                <a href="#italics">Italics</a>
+                <a href="#small">Small Tag</a>                
+            </div>
     
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#structuring-content">Structuring Content</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#header">Header</a>
+                <a href="#footer">Footer</a>
+                <a href="#main">Main</a>
+                <a href="#section">Sections</a>
+                <a href="#article">Articles</a>  
+                <a href="#nav">Navigation</a>               
+            </div>
+        </div>
+        <a href="#linking">Linking Content within a Page</a>
+        <a href="#comments">Comments</a>
+        <a href="#landmark-roles">Landmark Roles</a>
+        <a href="#aria-label">Aria Label</a>
+        <a href="#skip-links">Skip Links</a>    
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#font-properties">Font Properties</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#font-family">Font Family</a>
+                <a href="#font-size">Font Size</a>
+                <a href="#font-weight">Font Weight</a>
+                <a href="#font-style">Font Style</a>
+                <a href="#line-height">Line Height</a>  
+                <a href="#font-shorthand">Font Shorthand</a>               
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#text-decorations">Text Decorations</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#text-transform">Text Transform</a>
+                <a href="#text-decoration">Text Decoration</a>
+                <a href="#text-align">Text Align</a>
+                <a href="#text-indent">Text Indent</a>
+                <a href="#text-shadow">Text Shadow</a>                  
+            </div>
+        </div>
+        <a href="#link-states">Link States</a>
+        <a href="#google-font">Google Fonts</a>
+        <a href="#margin">Margin</a>
+        <a href="#padding">Padding</a>
+    </nav>
+
+    <section id="common-tags">
+    <h1>Commonly used html tags/elements</h1>
+
+    <div id="headings">
+        <h2>Headings: h1-h6</h2>
+            <ul>
+                <li><h1>Heading 1 = h1</h1></li> 
+                <li><h2>Heading 2 = h2</h2></li>
+                <li><h3>Heading 3 = h3</h3></li>
+                <li><h4>Heading 4 = h4</h4></li>
+                <li><h5>Heading 5 = h5</h5></li>
+                <li><h6>Heading 6 = h6</h6></li>                
+            </ul>
+
+    </div>
+    <div id="paragraph">
+        <h2><u>Paragraph tag</u></h2>
+            <p>This is an example of a paragraph tag</p>
+            
+    </div>
+    <div id="lists">
+        <h2>Lists</h2>
+            <h3>unordered lists = &lt;ul></h3>
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+        
+            <h3>ordered lists = &lt;ol></h3>
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+            
+            <h3>Description list = &lt;dl> ,&lt;dt>, &lt;dd> </h3>
+                <p>A description list is a list of terms, with a description of each term.</p>
+                <p>The &lt;dl> tag defines the description list, the &lt;dt> tag defines the term (name), and the &lt;dd> tag describes each term:</p>
+                <dl>
+                    <dt>Coffee</dt>
+                    <dd>- black hot drink</dd>
+                    <dt>Milk</dt>
+                    <dd>- white cold drink</dd>
+                </dl>
+        
+    </div>
+
+    <div id="anchors">
+        <h2>a tag</h2>
+                <p>The &lt;a> tag defines a hyperlink, which is used to link from one page to another.
+
+                The most important attribute of the &lt;a> element is the href attribute, which indicates the link's destination. </p>
+                
+                <p>By default, links will appear as follows in all browsers:</p>
+                    <ul>
+                       <li>An unvisited link is underlined and blue</li> 
+                        <li>A visited link is underlined and purple</li>
+                        <li>An active link is underlined and red</li>
+                    </ul>
+           
+
+    </div>
+    <div id="images">
+        <h2>img tag</h2>
+            <p>
+                The &lt;img> tag is used to embed an image in an HTML page.
+            </p>
+
+            <p>
+                Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+            </p>
+            
+            <p>
+                The &lt;img> tag has two required attributes:
+            </p>
+
+
+                <ul>
+                   <li>src - Specifies the path to the image</li>
+                    <li>alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed</li> 
+                </ul>
+                
+            
+    </div>
+
+    <div id="figure">
+        <h2>Figure tag</h2>
+            <p>
+                The &lt;figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+            </p>
+
+            <p>
+                While the content of the &lt;figure> element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+            </p>
+                
+            <p>
+                Tip: The &lt;figcaption> element is used to add a caption for the &lt;figure> element.
+            </p>
+    </div>
+
+    <div id="quote">
+        <h2>quote = &lt;q></h2>
+            <p>
+                Used to mark up quotes embedded in
+                other elements like a paragraph.
+            </p>
+
+    </div>
+        
+
+    <div id="blockquotes">
+        <h2>Blockquotes = &lt;blockquote></h2>
+            <p>
+                For large stand alone quotes.
+                
+            </p>
+
+    </div>
+
+    <div id="cite">
+        <h2>cite</h2>
+            <p>    
+                Marking the source of the quote. = &lt;cite>
+            </p>
+        
+    </div>
+    <div id="phrasing elements">
+        <h2>Phrasing Elements</h2>
+            <div id="emphasis">
+                
+                <p>
+                    &lt;em> = emphasis
+
+                </p>
+            </div>
+
+            <div id="strong">
+                
+                <p>
+                    &lt;strong> = Lots of emphasis, strong
+                    importance or urgency.
+                </p>
+            </div>
+
+            <div id="bold">
+                <p>
+                    &lt;b> = b tag used for keywords
+                </p>
+                
+            </div>
+
+            <div id="italics">
+                &lt;i> = italics. Another language, technical term,
+                title. Visual only italics.
+            </div>
+
+            <div id="small">
+
+                <p>
+                    &lt;small> = for smaller text.
+                </p>
+            </div>
+</div>
+    </section>
+
+    <section id="structuring-content">
+
+        <div id="header">
+            <h2>Header = &lt;header></h2>
+                <p>
+                    The header is the introductory content
+                    usually at the top of the page and would
+                    include a logo or company name and main
+                    navigation. Headers are also within sections
+                    and articles to introduce the content for
+                    headings, subheadings, author, etc..
+
+                </p>
+        </div>
+
+        <div id="footer">
+            <h2>footer = &lt;footer> </h2>
+
+                <p>
+                    Many webpages end their pages with a
+                    footer at the bottom. This often includes
+                    lists of links, copyright information,
+                    extra information about the company,
+                    terms and services.
+                </p>
+        </div>
+
+        <div id="main">
+            <h2>Main = &lt;main></h2>
+
+                <p>
+                    The main element wraps around the main
+                    content of the page. It’s only used once
+                    per page and it tells the browser that
+                    this is where the main content is.
+
+                </p>
+        </div>
+
+        <div id="section">
+            <h2>section = &lt;section></h2>
+                <p>
+                    Section is used to wrap around related
+                    pieces of content. Usually each section
+                    has its own heading.
+
+                </p>
+        </div>
+
+        <div id="article">
+            <h2>article = &lt;article></h2>
+                <p>
+                    The article element represents a self-
+                    contained composition in a web page, which is
+                    intended to be independently distributable or
+                    reusable. Examples include blog post, product
+                    card, interactive widget, etc...
+                </p>
+        </div>
+
+        <div id="nav">
+            <h2>navigation = &lt;nav></h2>
+
+                <p>
+                    The nav element represents a section of a
+                    page whose purpose is to provide
+                    navigation links, either within the
+                    current document or to other documents.
+                </p>
+        </div>
+
+    </section>
+
+    <section id="linking">
+        <h2>Link to an absolute url or path</h2>
+        <img src="images/pic3.png"/>
+    
+            <p>
+                
+                    Absolute URLs offer a full address for a
+                    website or other resource on the Internet.
+                    
+            </p>
+                <h3>Link to a relative url/ path</h3>
+                <img src="images/pic1.png"/>
+                    <p>
+                        A relative file path points to a file
+                        relative to the current page.
+                    </p>
+                <h3>Link to element on same page</h3>
+                <img src="images/Pic 2.png"/>
+            
+
+    </section>
+
+    <section id="comments">
+        <h2>comments</h2>
+        <img src="images/commenting html.png"/>
+        
+            <p>
+                comments are not displayed by the browser, but they can help documnet your HTML source code.
+
+            </p>
+        
+    </section>
+
+    <section id="landmark-roles">
+        <h2>Landmark Roles</h2>
+        <p>
+            ARIA has a set of landmark roles
+            to help those using screen readers
+            to jump directly to specific
+            sections within our sites.
+
+        </p>
+        <dl>
+            <dt><strong>&lt;header role = "banner" ></strong></dt>
+                <dd>- This role is for defining an element as the
+                    masthead, added to the primary <header>
+                    </dd>
+            <dt><strong>&lt;nav role ="navigation"></strong></dt>
+                <dd>- This role is for defining an element as the
+                    primary navigation, added the the top &lt;nav>.
+                    </dd>
+            <dt><strong>&lt;main role ="main"></strong></dt>
+                <dd>- This role is for defining an element as
+                    being the main content of the page, added
+                    to the &lt;main></dd>
+                    
+            <dt><strong>&lt;aside role ="complimentary"></strong></dt>
+                <dd>- This role is for defining an element as being
+                    content related to the primary content,
+                    usually added to an &lt;aside></dd>
+            <dt><strong>&lt;footer role ="contentinfo"></strong></dt>
+                <dd>- This role is for defining an element as
+                    information about the content: e.g.
+                    copyright, terms, privacy policy, usually
+                    added to a &lt;footer></dd>
+    
+        </dl>
+        
+    </section>
+
+    <section id="aria-label">
+<h2>Aria-Label</h2>
+        <p>
+            Web Accessibility Initiative (WAI) has a specification called Accesible Rich Internet Apllication (ARIA)
+        </p>
+        <img src="images/arialabel.png"/>
+        <p>
+            Adding aria-label attribute provides the user with a non-visual label
+            that will only be announced by screen readers.
+        </p>
+        
+            <h3>image description</h3>
+                <p>
+                    Always describe your images with the alt
+                    attribute. If purely decorative you can leave it
+                    empty and apply role=“presentation” 
+                </p>
+                <p>
+                    The alt attribute has two purposes:
+                    <ul>
+                        <li>To describe the photo if it doesn’t download</li>
+                        <li>To describe the photo to someone who cannot
+                        see the image, maybe someone using a screen
+                        reader.</li>
+                    </ul>
+                </p>
+               
+    </section>
+
+    <section id="skip-links">
+        <h2>Skip Links</h2>
+        <img src="images/skip links.png"/>
+            <p>
+                Skip links are placed at the top of your page and offer users a way to jump to specific areas of the page
+            </p>
+
+        
+    </section>
+
+    <section id="font-properties">
+        <h2>Font Properties</h2>
+        <p>
+            There are a number of font properties that has to do with the thickness of the text, sizing, and what the actual font family is. Below are a few of the most common font properties.
+        </p>
+        
+        <div id="font-family"></div>
+        <h3>font-family</h3>
+        <p>Specifies which font family to use for whatever text you're selecting in your CSS</p>
+        <div id="font-size"></div>
+        <h3>font-size</h3>
+        <p>Changes the size of the font.</p>
+        <div id="font-weight"></div>
+        <h3>font-weight</h3>
+        <p>Changes the thickness of the font.</p>
+        <div id="font-style"></div>
+        <h3>font-style</h3>
+        <p>Change the way the font is displayed e.g. italicize, oblique, or normal.</p>
+        <div id="line-height"></div>
+        <h3>line-height</h3>
+        <p>Changes the height of a line</p>
+        <div id="font-shorthand"></div>
+        <h3>Font Shorthand</h3>
+        <p>This isn't a property that you can edit, but this is a way for you to apply all the above properties into one. The way you would do this is:
+             <code>font: <i>font-style font-variant font-weight font-size/line-height font-family</i>;</code></p>
+            
+        <p>font-size and font-family is required for this shorthand, but if any of the other values are missing, their default value is used.</p>
+        <p>There are a number of other properties you can include in this tag, listed <a href="https://www.w3schools.com/cssref/pr_font_font.php">here</a></p>
+
+    </section>
+    
+    <section id="text-decorations">
+        <h2>Text Decorations</h2>
+        <p>Text can be decorated / styled in a lot of different ways. Here's a few of the most common ways to style text.</p>
+        <div id="text-transform"></div>
+        <h3>text-transform</h3>
+        <p>Allow you to change the case of your text such as uppercase, lowercase, or capitalize.</p>
+        <div id="text-decoration"></div>
+        <h3>text-decoration</h3>
+        <p>Add text-decoration to your text, such as underlines, overlines, dashed lines etc. You can also remove text-decorations from your links to make them look cleaner</p>
+        <div id="text-align"></div>
+        <h3>text-align</h3>
+        <p>Specifies the alignment of your text (center, left, right)</p>
+        <div id="text-indent"></div>
+        <h3>text-indent</h3>
+        <p>Specifies how much indentation to apply to your text</p>
+        <div id="text-shadow"></div>        
+        <h3>text-shadow</h3>
+        <p>Adds a shadow effect to your text.</p>
+
+    </section>
+
+    <section id="link-states">
+        <h2>Link States (default, visited, hover, focus)</h2>
+
+        <p>Link states allows you to go in depth with user interaction of links. You can style exactly how a link looks depending on a number of factors:</p>
+
+        <ul>
+            <li><strong>default:</strong> The way the link looks by default, before a user has clicked on a link.</li>
+            <li><strong>visited:</strong> How a link looks if the user has visited it before. Much like how on Google, if you've visited a link before, it shows up as purple instead of blue</li>
+            <li><strong>hover:</strong> How the link looks when a cursor is hovering over it.</li>
+            <li><strong>focus:</strong> How the link looks when the keyboard is focused on the link.</li>
+        </ul>
+        <p>You can use these link states in your CSS by selecting <code>a</code> then attaching a colon onto it, and select the state you'd like to change, like: <code>a:hover</code></p>
+    </section>
+
+    <section id="google-font">
+        <h2>Adding a Google Font</h2>
+        <p>To add a Google Font to your html, first, go to <a href="https://fonts.google.com">this link</a> and choose the font you want to import.</p>
+
+        <p>Choose as many different fonts, sizes, bolding / emphasis styles as you wish by pressing the + button next to the fonts you want.
+           This will open up a side panel which shows everything you've selected thus far. When you're ready, copy the "link" text and paste it in your
+           &lt;head> tag at the top of your page. Then, uses the CSS rules defined in the side panel to use those fonts. </p>
+
+    </section>
+
+    <section id="margin">
+        <h2>Margin</h2>
+        
+        <p>
+            Margin allows you to generate space around an element's content, <i>outside</i> of the defined borders.
+        </p>
+        <p>
+            There are multiple ways to define the margins of an element. The shorthand way uses <code>margin: <i>top right bottom left</i>;</code>. 
+            If the <code>margin</code> property has one value (<code>margin: 25px;</code>), all four margins will be 25px.
+            If the <code>margin</code> property has two values (<code>margin: 25px 50px;</code>), then the top and bottom margins will be 25px, and the right and left margins will be 50px.
+
+            You can also explicitly define each of these properties, like so:
+            <ul>
+                <li><code>margin-top: 8px</code></li>
+                <li><code>margin-right: 12px</code></li>
+                <li><code>margin-left: 2em</code></li>
+                <li><code>margin-top: 0%</code></li>
+            </ul>
+
+            Margin uses length properties (px, cm, pt, etc..), inherit, %, and auto to define spacing.
+        </p>
+    </section>
+
+    <section id="padding">
+        <h2>Padding</h2>
+        <p>
+            Padding allows you to generate space around an element's content, <i>inside</i> of the defined borders.
+        </p>
+        <p>
+            There are multiple ways to define the padding of an element. The shorthand way uses <code>padding: <i>top right bottom left</i>;</code>. 
+            If the <code>padding</code> property has one value (<code>padding: 25px;</code>), all four paddings will be 25px.
+            If the <code>padding</code> property has two values (<code>padding: 25px 50px;</code>), then the top and bottom paddings will be 25px, and the right and left paddings will be 50px.
+
+            You can also explicitly define each of these properties, like so:
+            <ul>
+                <li><code>padding-top: 8px</code></li>
+                <li><code>padding-right: 12px</code></li>
+                <li><code>padding-left: 2em</code></li>
+                <li><code>padding-top: 0%</code></li>
+            </ul>
+
+            Padding uses length properties (px, cm, pt, etc..), inherit, and % to define spacing.
+            </p>
+    </section>
+
+        
+</main>
+
+
 </body>
 </html>

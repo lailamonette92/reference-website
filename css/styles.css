@@ -76,7 +76,7 @@ h2{
 }
 
 #text-decoration p {
-    text-decoration: wavy;
+    text-decoration: overline wavy;
 }
 
 #text-align p {
